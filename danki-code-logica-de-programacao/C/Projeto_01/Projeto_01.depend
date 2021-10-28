@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1635389512 source:c:\xampp\htdocs\projetos-estudos\danki-code-logica-de-programacao\c\projeto_01\main.c
+	<stdio.h>
+	<stdlib.h>
+
