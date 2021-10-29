@@ -51,15 +51,39 @@ int main()
     scanf("%s", nome);
 
     printf("\nQual seu sobrenome, %s?\n", nome);
-    scanf("%b", sobrenome);
+    scanf("%s", sobrenome);
 
     printf("\nShow de bola, %s... Qual sua idade?\n", nome);
     scanf("%d", &idade);
 
     printf("\nE qual o ano de seu nascimento?\n");
-    scanf("%c", &nascimento);
+    scanf("%d", &nascimento);
 
-    printf("\nMuito bom! O %s %b tem %d anos e nasceu em %c", nome, sobrenome, idade, nascimento);
+    printf("\nMuito bom! O %s %s tem %d anos e nasceu em %d", nome, sobrenome, idade, nascimento);
+
+    //-----------------------------------------
+    char nome1[256];
+    int idade1;
+
+    printf("\nOla! Qual seu nome?\n");
+    scanf("%s", &nome1);
+
+    printf("\nQual sua idade?\n");
+    scanf("%d", &idade1);
+
+    printf("\n\nNome: %s\nIdade: %d\n", nome1, idade1);
+
+    printf("\nAguarde enquanto lemos seus dados...\n");
+
+    printf("\nA primeira letra do seu nome e: %c", nome1[0]);
+
+    if (idade1 >= 18) {
+        printf("\nVoce e adulto!");
+    } else if (idade1 >= 12) {
+        printf("\nVoce e adolescente!");
+    } else {
+        printf("\nVoce e crianca!");
+    }
 
     return 0;
 }
